@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
+  standalone: true,
   imports: [],
   templateUrl: './counter.html',
   styleUrl: './counter.scss',
