@@ -1,1 +1,19 @@
-<p>product-card works!</p>
+<div class="product-card">
+  <app-badge [text]="product.badge ?? ''"></app-badge>
+
+  <img [src]="product.image" [alt]="product.title">
+
+  <h3>{{ product.title }}</h3>
+
+  <p>{{ product.price }} {{ product.currency }}</p>
+
+  @if (variant === 'auction' && product.oldPrice) {
+    <small>{{ product.oldPrice }} {{ product.currency }}</small>
+  }
+
+  <app-counter></app-counter>
+
+  <button (click)="addProduct()">
+    В корзину
+  </button>
+</div>
