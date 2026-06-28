@@ -1,1 +1,17 @@
-<p>categories-section works!</p>
+<section class="categories">
+
+  <h2>Категории</h2>
+
+  <div class="grid">
+
+    @for (item of categories; track $index) {
+      <div class="card">
+        <div class="image"></div>
+
+        <p>{{ item }}</p>
+      </div>
+    }
+
+  </div>
+
+</section>

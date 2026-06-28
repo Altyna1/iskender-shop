@@ -5,6 +5,7 @@ import { Badge } from '../badge/badge';
 
 @Component({
   selector: 'app-product-card',
+  standalone: true,
   imports: [Counter, Badge],
   templateUrl: './product-card.html',
   styleUrl: './product-card.scss',

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './auction-section.html',
   styleUrl: './auction-section.scss',
 })
-export class AuctionSection {}
+export class AuctionSection {
+  products = [1, 2, 3, 4];
+}

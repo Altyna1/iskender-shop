@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './categories-section.html',
   styleUrl: './categories-section.scss',
 })
-export class CategoriesSection {}
+export class CategoriesSection {
+  categories = [
+    'Душевые кабины',
+    'Ванны',
+    'Смесители',
+    'Раковины',
+    'Унитазы',
+    'Полотенцесушители'
+  ];
+}

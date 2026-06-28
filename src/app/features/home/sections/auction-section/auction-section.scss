@@ -1,0 +1,28 @@
+.auction {
+    margin-top: 60px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.image {
+    height: 180px;
+    background: #ececec;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+}
