@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProductService } from '../../../../core/services/product.service';
+import { Product } from '../../../../core/models/product.model';
+import { ProductCard } from '../../../../shared/components/product-card/product-card';
 
 @Component({
   selector: 'app-auction-section',
   standalone: true,
-  imports: [],
+  imports: [ProductCard],
   templateUrl: './auction-section.html',
   styleUrl: './auction-section.scss',
 })
 export class AuctionSection {
-  products = [1, 2, 3, 4];
+  private productService = inject(ProductService);
+
+  products: Product[] = [];
+
+  ngOnInit() {
+    this.productService.getAuctionProducts().subscribe((data) => {
+      this.products = data;
+    });
+  }
 }

@@ -1,25 +1,18 @@
 <section class="auction">
 
-    <h2>Аукционные товары</h2>
+  <h2>Аукционные товары</h2>
 
-    <div class="cards">
+  <div class="cards">
 
-        @for (item of products; track item) {
+    @for (product of products; track product.id) {
 
-        <div class="product">
+      <app-product-card
+        [product]="product"
+        variant="auction">
+      </app-product-card>
 
-            <div class="image"></div>
+    }
 
-            <h3>Держатель для лейки</h3>
-
-            <p class="price">1294 c</p>
-
-            <button>В корзину</button>
-
-        </div>
-
-        }
-
-    </div>
+  </div>
 
 </section>
