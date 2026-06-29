@@ -6,7 +6,7 @@ import { CategoriesSection } from './sections/categories-section/categories-sect
 import { NewsSection } from './sections/news-section/news-section';
 import { AuctionSection } from './sections/auction-section/auction-section';
 import { StoresSection } from './sections/stores-section/stores-section';
-
+import { BestsellersSection } from './sections/bestsellers-section/bestsellers-section';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +15,7 @@ import { StoresSection } from './sections/stores-section/stores-section';
     Header,
     HeroSlider,
     CategoriesSection,
+    BestsellersSection,
     NewsSection,
     AuctionSection,
     StoresSection,

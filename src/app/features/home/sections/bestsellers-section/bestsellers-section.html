@@ -1,1 +1,17 @@
-<p>bestsellers-section works!</p>
+<section class="bestsellers">
+
+  <h2>Хиты продаж</h2>
+
+  <div class="products">
+
+    @for (product of products; track product.id) {
+
+      <app-product-card
+        [product]="product">
+      </app-product-card>
+
+    }
+
+  </div>
+
+</section>
