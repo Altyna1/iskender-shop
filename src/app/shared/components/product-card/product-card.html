@@ -1,19 +1,51 @@
 <div class="product-card">
-  <app-badge [text]="product.badge ?? ''"></app-badge>
 
-  <img [src]="product.image" [alt]="product.title">
+  <button class="favorite">
+    ♡
+  </button>
 
-  <h3>{{ product.title }}</h3>
+  <app-badge
+    [text]="product.badge ?? ''">
+  </app-badge>
 
-  <p>{{ product.price }} {{ product.currency }}</p>
+  <img
+    [src]="product.image"
+    [alt]="product.title">
 
-  @if (variant === 'auction' && product.oldPrice) {
-    <small>{{ product.oldPrice }} {{ product.currency }}</small>
-  }
+  <h3>
+    {{ product.title }}
+  </h3>
+
+  <div class="price">
+
+    <span
+      class="current-price"
+      [class.auction]="variant === 'auction'">
+
+      {{ product.price }} {{ product.currency }}
+
+    </span>
+
+    @if (variant === 'auction' && product.oldPrice) {
+
+      <span class="old-price">
+
+        {{ product.oldPrice }} {{ product.currency }}
+
+      </span>
+
+    }
+
+  </div>
+
+  <p class="stock">
+    В наличии
+  </p>
+
+  <p class="set">
+    ● Комплект
+  </p>
 
   <app-counter></app-counter>
 
-  <button (click)="addProduct()">
-    В корзину
-  </button>
 </div>

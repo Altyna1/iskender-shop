@@ -1,8 +1,21 @@
-<section class="hero-slider">
-  @for (item of items; track $index) {
-    <div class="hero-item">
-      <div class="circle"></div>
-      <p>{{ item }}</p>
+<section class="hero-menu">
+
+  @for (item of items; track item.title) {
+
+    <div class="menu-item">
+
+      <div class="circle">
+
+        <img
+          [src]="item.image"
+          [alt]="item.title">
+
+      </div>
+
+      <span>{{ item.title }}</span>
+
     </div>
+
   }
+
 </section>

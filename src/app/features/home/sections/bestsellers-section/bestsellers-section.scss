@@ -1,0 +1,93 @@
+@use '../../../../../styles/variables' as *;
+
+.bestsellers {
+  margin: 60px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+.section-header a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.products {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.arrow {
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: $white;
+
+  cursor: pointer;
+
+  font-size: 24px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .08);
+
+  transition: .3s;
+}
+
+.arrow:hover {
+  transform: scale(1.08);
+}
+
+.section-footer {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination span {
+  width: 42px;
+  height: 4px;
+
+  border-radius: 20px;
+
+  background: #d8d8d8;
+}
+
+.pagination .active {
+  background: $primary;
+}
+
+.section-footer a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: 600;
+}

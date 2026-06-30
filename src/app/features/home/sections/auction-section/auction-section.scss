@@ -1,28 +1,99 @@
-.auction {
-    margin-top: 60px;
+.auction-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
 }
 
-.cards {
-    display: flex;
-    gap: 20px;
+.auction-header a{
+    color:#2b7cd3;
+    text-decoration:none;
+    font-weight:600;
 }
 
-.product {
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 15px;
+.slider{
+
+display:flex;
+
+align-items:center;
+
+gap:30px;
+
 }
 
-.image {
-    height: 180px;
-    background: #ececec;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.cards{
+
+display:flex;
+
+gap:20px;
+
+overflow:hidden;
+
 }
 
-.price {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 15px 0;
+.arrow{
+
+width:48px;
+
+height:48px;
+
+border:none;
+
+background:white;
+
+border-radius:50%;
+
+font-size:32px;
+
+cursor:pointer;
+
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+}
+
+.auction-footer{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:30px;
+
+}
+
+.auction-footer a{
+
+color:#2b7cd3;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.pagination{
+
+display:flex;
+
+gap:10px;
+
+}
+
+.pagination span{
+
+width:40px;
+
+height:4px;
+
+background:#ddd;
+
+border-radius:10px;
+
+}
+
+.pagination .active{
+
+background:#1b74d1;
+
 }

@@ -8,12 +8,38 @@ import { Component } from '@angular/core';
   styleUrl: './categories-section.scss',
 })
 export class CategoriesSection {
-  categories = [
-    'Душевые кабины',
-    'Ванны',
-    'Смесители',
-    'Раковины',
-    'Унитазы',
-    'Полотенцесушители'
-  ];
+
+      categories = [
+      {
+        title: 'Душевые кабины',
+        count: 1520,
+        image: 'images/categories/dush.jpg'
+      },
+      {
+        title: 'Ванны',
+        count: 4500,
+        image: 'images/categories/vanna.jpg'
+      },
+      {
+        title: 'Смесители',
+        count: 100,
+        image: 'images/categories/smesitel.jpg'
+      },
+      {
+        title: 'Раковины',
+        count: 1252,
+        image: 'images/categories/rakovina.jpg'
+      },
+      {
+        title: 'Унитазы',
+        count: 3000,
+        image: 'images/categories/unitaz.jpg'
+      },
+      {
+        title: 'Полотенцесушители',
+        count: 3000,
+        image: 'images/categories/polotence.jpg'
+      }
+    ];
+
 }

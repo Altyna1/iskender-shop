@@ -1,48 +1,162 @@
+@use '../../../../styles/variables' as *;
+
 .header {
-  height: 72px;
-  background: #1f73b7;
+  height: 84px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 40px;
+  padding: 0 32px;
+
+  background: linear-gradient(
+    90deg,
+    #3d8fd0 0%,
+    #2b7ec5 50%,
+    #1668b4 100%
+  );
 }
 
 .logo {
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 54px;
+  width: auto;
 }
 
 .catalog-btn {
-  padding: 12px 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 56px;
+
+  padding: 0 28px;
 
   border: none;
 
   border-radius: 30px;
 
-  background: #2d7ebd;
+  background: rgba(255,255,255,.12);
 
-  color: white;
+  color: $white;
+
+  font-size: 18px;
+
+  font-weight: 500;
 
   cursor: pointer;
+
+  transition: .3s;
 }
 
-input {
-  width: 500px;
+.catalog-btn:hover {
+  background: rgba(255,255,255,.18);
+}
 
-  padding: 12px 20px;
+.menu-icon {
+  font-size: 22px;
+}
+
+.search {
+
+  width: 700px;
+
+  height: 56px;
+
+  background: $white;
 
   border-radius: 30px;
 
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 20px;
+
+  gap: 12px;
+}
+
+.search-icon {
+  font-size: 20px;
+}
+
+.search input {
+
+  flex: 1;
+
   border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+
+  color: $text-primary;
+}
+
+.search input::placeholder {
+  color: $text-secondary;
 }
 
 .actions {
+
   display: flex;
 
-  gap: 20px;
+  align-items: center;
 
-  color: white;
+  gap: 18px;
+}
+
+.login {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  color: $white;
+}
+
+.small-text {
+
+  font-size: 12px;
+
+  opacity: .85;
+}
+
+.login-text {
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.icon-btn {
+
+  width: 44px;
+
+  height: 44px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: $white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  transition: .3s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.05);
 }

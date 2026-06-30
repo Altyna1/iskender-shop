@@ -4,12 +4,28 @@
 
   <div class="grid">
 
-    @for (item of categories; track $index) {
-      <div class="card">
-        <div class="image"></div>
+    @for (item of categories; track item.title) {
 
-        <p>{{ item }}</p>
+      <div class="card">
+
+        <div class="info">
+
+          <h3>{{ item.title }}</h3>
+
+          <small>{{ item.count }} товаров</small>
+
+        </div>
+
+        <div class="image">
+
+          <img
+            [src]="item.image"
+            [alt]="item.title">
+
+        </div>
+
       </div>
+
     }
 
   </div>

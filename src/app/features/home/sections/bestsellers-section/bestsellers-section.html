@@ -1,16 +1,44 @@
 <section class="bestsellers">
 
-  <h2>Хиты продаж</h2>
+  <div class="section-header">
+    <h2>Хиты продаж</h2>
 
-  <div class="products">
+    <a href="#">Перейти в каталог</a>
+  </div>
 
-    @for (product of products; track product.id) {
+  <div class="slider">
 
-      <app-product-card
-        [product]="product">
-      </app-product-card>
+    <button class="arrow left">
+      &#10094;
+    </button>
 
-    }
+    <div class="products">
+
+      @for (product of products; track product.id) {
+
+        <app-product-card
+          [product]="product"
+          variant="default">
+        </app-product-card>
+
+      }
+
+    </div>
+
+    <button class="arrow right">
+      &#10095;
+    </button>
+
+  </div>
+
+  <div class="section-footer">
+
+    <div class="pagination">
+      <span class="active"></span>
+      <span></span>
+    </div>
+
+    <a href="#">Все</a>
 
   </div>
 
