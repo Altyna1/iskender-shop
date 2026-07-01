@@ -8,15 +8,80 @@
 
       <div class="card">
 
-        <h3>{{ store.name }}</h3>
+        <div class="top">
 
-        <p>{{ store.address }}</p>
+          <div class="logo">
 
-        <p>{{ store.phone }}</p>
+            <img
+              src="images/logos.png"
+              alt="Iskender">
+
+          </div>
+
+          <div class="info">
+
+            <h3>{{ store.name }}</h3>
+
+            <a href="#">открыть в карте</a>
+
+          </div>
+
+          <button class="arrow">
+
+              <img
+                  src="images/icons/arrow-right.svg"
+                  alt="arrow">
+
+          </button>
+        </div>
+
+        <hr>
+
+        <div class="address">
+
+          <img
+            src="images/icons/location.svg"
+            alt="location">
+
+          <p>{{ store.address }}</p>
+
+        </div>
+
+        <div class="bottom">
+
+          <div>
+
+            <img
+            src="images/icons/clock.svg"
+            alt="clock">
+
+            08:00 - 22:00
+
+          </div>
+
+          <div>
+
+            <img
+            src="images/icons/phone.svg"
+            alt="phone">
+
+            {{ store.phone }}
+
+          </div>
+
+        </div>
 
       </div>
 
     }
+
+  </div>
+
+  <div class="pagination">
+
+    <span class="active"></span>
+
+    <span></span>
 
   </div>
 

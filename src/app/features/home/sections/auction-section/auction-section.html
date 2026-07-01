@@ -1,18 +1,26 @@
 <section class="auction">
 
   <div class="auction-header">
+
     <h2>Аукционные товары</h2>
 
-    <a href="#">перейти в каталог</a>
+    <a href="#">Перейти в каталог</a>
+
   </div>
 
   <div class="slider">
 
-    <button class="arrow left">
+    <button
+      class="arrow left"
+      (click)="scrollLeft()">
+
       ❮
+
     </button>
 
-    <div class="cards">
+    <div
+      class="cards"
+      #cards>
 
       @for (product of products; track product.id) {
 
@@ -25,8 +33,12 @@
 
     </div>
 
-    <button class="arrow right">
+    <button
+      class="arrow right"
+      (click)="scrollRight()">
+
       ❯
+
     </button>
 
   </div>
@@ -34,11 +46,12 @@
   <div class="auction-footer">
 
     <div class="pagination">
-      <span class="active"></span>
-      <span></span>
-    </div>
 
-    <a href="#">Все</a>
+      <span class="active"></span>
+
+      <span></span>
+
+    </div>
 
   </div>
 

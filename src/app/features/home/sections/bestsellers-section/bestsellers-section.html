@@ -1,18 +1,26 @@
 <section class="bestsellers">
 
   <div class="section-header">
+
     <h2>Хиты продаж</h2>
 
     <a href="#">Перейти в каталог</a>
+
   </div>
 
   <div class="slider">
 
-    <button class="arrow left">
+    <button
+      class="arrow left"
+      (click)="scrollLeft()">
+
       &#10094;
+
     </button>
 
-    <div class="products">
+    <div
+      class="products"
+      #productsContainer>
 
       @for (product of products; track product.id) {
 
@@ -25,8 +33,12 @@
 
     </div>
 
-    <button class="arrow right">
+    <button
+      class="arrow right"
+      (click)="scrollRight()">
+
       &#10095;
+
     </button>
 
   </div>
@@ -34,11 +46,12 @@
   <div class="section-footer">
 
     <div class="pagination">
-      <span class="active"></span>
-      <span></span>
-    </div>
 
-    <a href="#">Все</a>
+      <span class="active"></span>
+
+      <span></span>
+
+    </div>
 
   </div>
 

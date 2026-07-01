@@ -13,42 +13,42 @@ export class HeroSlider {
 
     {
       title: 'Скидки',
-      image: 'images/menu/skidki.jpg'
+      image: 'images/news/news2.jpg'
     },
 
     {
       title: 'Акции',
-      image: 'images/menu/akcii.jpg'
+      image: 'images/news/news1.jpg'
     },
 
     {
       title: 'Распродажа',
-      image: 'images/menu/rasprodazha.jpg'
+      image: 'images/categories/sink.jpg'
     },
 
     {
       title: 'Подарки',
-      image: 'images/menu/podarki.jpg'
+      image: 'images/products/product1.jpg'
     },
 
     {
       title: 'Новинки',
-      image: 'images/menu/novinki.jpg'
+      image: 'images/categories/tower-rail.png'
     },
 
     {
       title: 'Душевые',
-      image: 'images/menu/dush.jpg'
+      image: 'images/categories/shower.jpg'
     },
 
     {
       title: 'Ванны',
-      image: 'images/menu/vanna.jpg'
+      image: 'images/categories/bathtub.jpg'
     },
 
     {
       title: 'Смесители',
-      image: 'images/menu/smesitel.jpg'
+      image: 'images/categories/faucet.jpg'
     }
 
   ];

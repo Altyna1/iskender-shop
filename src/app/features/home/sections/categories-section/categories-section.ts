@@ -13,32 +13,32 @@ export class CategoriesSection {
       {
         title: 'Душевые кабины',
         count: 1520,
-        image: 'images/categories/dush.jpg'
+        image: 'images/Dushevie_kabini_68.jpg'
       },
       {
         title: 'Ванны',
         count: 4500,
-        image: 'images/categories/vanna.jpg'
+        image: 'images/categories/bathtub.jpg'
       },
       {
         title: 'Смесители',
         count: 100,
-        image: 'images/categories/smesitel.jpg'
+        image: 'images/categories/faucet.jpg'
       },
       {
         title: 'Раковины',
         count: 1252,
-        image: 'images/categories/rakovina.jpg'
+        image: 'images/categories/sink.jpg'
       },
       {
         title: 'Унитазы',
         count: 3000,
-        image: 'images/categories/unitaz.jpg'
+        image: 'images/categories/toilet.png'
       },
       {
         title: 'Полотенцесушители',
-        count: 3000,
-        image: 'images/categories/polotence.jpg'
+        count: 350,
+        image: 'images/news/news3.png'
       }
     ];
 

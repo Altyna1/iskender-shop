@@ -59,7 +59,10 @@
 }
 
 .menu-icon {
-  font-size: 22px;
+  width: 20px;
+  height: 20px;
+
+  filter: brightness(0) invert(1);
 }
 
 .search {
@@ -81,8 +84,9 @@
   gap: 12px;
 }
 
-.search-icon {
-  font-size: 20px;
+.search-icon{
+    width:22px;
+    height:22px;
 }
 
 .search input {
@@ -139,24 +143,34 @@
 }
 
 .icon-btn {
-
-  width: 44px;
-
-  height: 44px;
-
-  border: none;
-
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
+  background: #fff;
 
-  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  cursor: pointer;
+  padding: 0;
+}
 
-  font-size: 18px;
-
-  transition: .3s;
+.icon-btn img {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 .icon-btn:hover {
   transform: scale(1.05);
+}
+
+.icon-btn img {
+
+  width: 22px;
+
+  height: 22px;
+
+  object-fit: contain;
+
 }

@@ -1,16 +1,26 @@
 <div class="product-card">
 
   <button class="favorite">
-    ♡
+
+    <img
+      src="images/icons/heart.svg"
+      alt="Favorite">
+
   </button>
 
-  <app-badge
-    [text]="product.badge ?? ''">
-  </app-badge>
+  @if (product.badge) {
+    <app-badge
+      [text]="product.badge">
+    </app-badge>
+  }
 
-  <img
-    [src]="product.image"
-    [alt]="product.title">
+  <div class="image">
+
+    <img
+      [src]="product.image"
+      [alt]="product.title">
+
+  </div>
 
   <h3>
     {{ product.title }}
@@ -18,9 +28,7 @@
 
   <div class="price">
 
-    <span
-      class="current-price"
-      [class.auction]="variant === 'auction'">
+    <span class="current-price">
 
       {{ product.price }} {{ product.currency }}
 
@@ -39,11 +47,19 @@
   </div>
 
   <p class="stock">
-    В наличии
+
+    {{ product.stockText }}
+
   </p>
 
-  <p class="set">
-    ● Комплект
+  <p
+      class="set"
+      [class.disabled]="!product.hasSet">
+
+      <span class="dot"></span>
+
+      Комплект
+
   </p>
 
   <app-counter></app-counter>

@@ -11,13 +11,48 @@ import { Badge } from '../badge/badge';
   styleUrl: './product-card.scss',
 })
 export class ProductCard {
-  @Input({ required: true }) product!: Product;
 
-  @Input() variant: 'default' | 'auction' = 'default';
+  @Input({ required: true })
+  product!: Product;
 
-  @Output() addToCart = new EventEmitter<Product>();
+  @Input()
+  variant: 'default' | 'auction' = 'default';
 
-  addProduct(): void {
+  @Output()
+  addToCart = new EventEmitter<Product>();
+
+  @Output()
+  toggleFavorite = new EventEmitter<number>();
+
+  @Output()
+  quantityChange =
+    new EventEmitter<{
+      id: number;
+      quantity: number;
+    }>();
+
+  onAddToCart(): void {
+
     this.addToCart.emit(this.product);
+
   }
+
+  onToggleFavorite(): void {
+
+    this.toggleFavorite.emit(this.product.id);
+
+  }
+
+  onQuantityChange(quantity: number): void {
+
+    this.quantityChange.emit({
+
+      id: this.product.id,
+
+      quantity
+
+    });
+
+  }
+
 }

@@ -1,22 +1,62 @@
 <section class="news">
 
-  <h2>Новости</h2>
+  <div class="news-header">
 
-  <div class="cards">
+    <h2>Новости</h2>
 
-    @for (item of news; track item) {
+    <a href="#">Все</a>
 
-      <div class="card">
+  </div>
 
-        <h3>-50%</h3>
+  <div class="slider">
 
-        <p>На кухонную мебель</p>
+    <button
+      class="arrow left"
+      (click)="scrollLeft()">
 
-        <button>Подробнее</button>
+      <img
+        src="images/icons/arrow-left.svg"
+        alt="left">
 
-      </div>
+    </button>
 
-    }
+    <div class="cards" #cards>
+
+  @for (item of news; track item) {
+
+    <div class="card">
+
+          <img
+            [src]="'images/news/news' + item + '.jpg'"
+            alt="Новость">
+
+          <button class="details-btn">
+            Подробнее
+          </button>
+
+        </div>
+
+      }
+
+    </div>
+
+    <button
+      class="arrow right"
+      (click)="scrollRight()">
+
+      <img
+        src="images/icons/arrow-right.svg"
+        alt="right">
+
+    </button>
+
+  </div>
+
+  <div class="footer">
+
+    <span class="active"></span>
+
+    <span></span>
 
   </div>
 

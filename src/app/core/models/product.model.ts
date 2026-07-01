@@ -9,4 +9,7 @@ export interface Product {
   badge?: string;
   isFavorite?: boolean;
   quantity?: number;
+
+  stockText?: string;
+  hasSet?: boolean;
 }
